@@ -47,7 +47,7 @@ while ($true) {
 	$body = @{
 		"model" = "text-davinci-003"
 		"prompt" = $prompt
-		"max_tokens" = 4000
+		"max_tokens" = (4000 - $prompt.Lenght) 
 		"temperature" = $temperature
 	}
 
